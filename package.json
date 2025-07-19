@@ -1,0 +1,31 @@
+{
+  "name": "zap-pilot-deck",
+  "version": "1.0.0",
+  "description": "Marp CLI presentation deck for Zap Pilot",
+  "main": "deck.md",
+  "scripts": {
+    "build": "marp deck.md --pdf --allow-local-files",
+    "build:html": "marp deck.md --html --allow-local-files",
+    "build:pptx": "marp deck.md --pptx --allow-local-files",
+    "watch": "marp deck.md --watch --server --allow-local-files",
+    "preview": "marp deck.md --server --allow-local-files",
+    "dev": "npm run watch",
+    "export:all": "npm run build && npm run build:html && npm run build:pptx",
+    "clean": "rm -f deck.pdf deck.html deck.pptx"
+  },
+  "keywords": [
+    "marp",
+    "presentation",
+    "slides",
+    "markdown",
+    "pitch-deck"
+  ],
+  "author": "Zap Pilot Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
