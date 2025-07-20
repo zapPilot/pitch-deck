@@ -1,0 +1,14 @@
+# Node dependencies
+node_modules/
+
+# Build artifacts
+deck.html
+deck.pdf
+
+# Uploads
+uploads/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+usage_tracking2.json

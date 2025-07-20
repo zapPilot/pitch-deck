@@ -47,10 +47,13 @@ style: |
   section ul {
     font-size: 1.1rem;
     line-height: 1.6;
+    text-align: left;
+    padding-left: 1.5rem;
   }
   
   section li {
     margin-bottom: 0.8rem;
+    text-align: left;
   }
   
   strong {
@@ -140,38 +143,60 @@ style: |
 
 ## The Problem
 
+### Active crypto holders juggle 5+ chains, 10+ dApps
+
+**Current painful manual workflow:**
+
+1. **Bridge assets** across chains  
+2. **Swap** into target tokens  
+3. **Claim & sell** farming rewards  
+4. **Re-allocate** to higher-APR pools  
+5. **Repeat** for every wallet
+
 <div class="highlight-box">
 
-**Active crypto holders juggle 5+ chains, 10+ dApps**
+**The Pain Points:**
 
-Current painful manual workflow:
-1. Bridge assets across chains  
-2. Swap into target tokens  
-3. Claim & sell farming rewards  
-4. Re-allocate to higher-APR pools  
-5. Repeat for every wallet
+• Manual rebalancing takes **30–45 minutes** + frequent gas fees  
+• Vault protocols demand **custody & performance fees**  
+• Result: portfolios drift, rewards pile up, **alpha is lost**
+
+**⇨ 8–10 transactions, dozens of clicks, every rebalance cycle**
 
 </div>
-
-- Manual rebalancing takes **30–45 min** and frequent gas fees  
-- Vault protocols demand **custody & performance fees**  
-- Result: portfolios drift, rewards pile up, alpha is lost
-
-*⇨ 8–10 transactions, dozens of clicks, every rebalance cycle*
 
 ---
 
 ## Solution — Zap Pilot
 
-**One-click “Rebalance” button** that:
+<div class="highlight-box">
 
-- Sweeps dust & claims rewards  
-- Sells winners, buys laggards  
-- Routes funds to higher-yield pools  
-- Respects user rules (e.g. “≥ 50 % stables”)  
-- Signs everything **from the user’s own wallet**
+### 🎯 **One-click "Rebalance" button**
 
-_Time spent: < 30 s • Custody: 100 % user-held_
+**What it does:**
+
+• **Sweeps dust** & claims rewards  
+• **Sells winners**, buys laggards  
+• **Routes funds** to higher-yield pools  
+• **Respects user rules** (e.g. "≥ 50% stables")  
+• **Signs everything** from the user's own wallet
+
+</div>
+
+<div class="metrics">
+<div class="metric">
+<span class="metric-number">< 30s</span>
+<span class="metric-label">Time spent</span>
+</div>
+<div class="metric">
+<span class="metric-number">100%</span>
+<span class="metric-label">User-held custody</span>
+</div>
+<div class="metric">
+<span class="metric-number">1</span>
+<span class="metric-label">Click to rebalance</span>
+</div>
+</div>
 
 ---
 
