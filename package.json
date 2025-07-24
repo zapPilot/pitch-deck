@@ -7,11 +7,33 @@
     "build": "marp deck.md --pdf --allow-local-files",
     "build:html": "marp deck.md --html --allow-local-files",
     "build:pptx": "marp deck.md --pptx --allow-local-files",
+    "build:all": "npm run build:minimal && npm run build:corporate && npm run build:vibrant && npm run build:retro && npm run build:organic && npm run build:glass && npm run build:brutal && npm run build:luxury && npm run build:gaming && npm run build:medical",
+    "build:minimal": "marp deck-minimal.md --html --pdf --allow-local-files",
+    "build:corporate": "marp deck-corporate.md --html --pdf --allow-local-files", 
+    "build:vibrant": "marp deck-vibrant.md --html --pdf --allow-local-files",
+    "build:retro": "marp deck-retro.md --html --pdf --allow-local-files",
+    "build:organic": "marp deck-organic.md --html --pdf --allow-local-files",
+    "build:glass": "marp deck-glass.md --html --pdf --allow-local-files",
+    "build:brutal": "marp deck-brutal.md --html --pdf --allow-local-files",
+    "build:luxury": "marp deck-luxury.md --html --pdf --allow-local-files",
+    "build:gaming": "marp deck-gaming.md --html --pdf --allow-local-files",
+    "build:medical": "marp deck-medical.md --html --pdf --allow-local-files",
     "watch": "marp deck.md --watch --server --allow-local-files",
     "preview": "marp deck.md --server --allow-local-files",
+    "preview:minimal": "marp deck-minimal.md --server --allow-local-files",
+    "preview:corporate": "marp deck-corporate.md --server --allow-local-files",
+    "preview:vibrant": "marp deck-vibrant.md --server --allow-local-files",
+    "preview:retro": "marp deck-retro.md --server --allow-local-files",
+    "preview:organic": "marp deck-organic.md --server --allow-local-files",
+    "preview:glass": "marp deck-glass.md --server --allow-local-files",
+    "preview:brutal": "marp deck-brutal.md --server --allow-local-files",
+    "preview:luxury": "marp deck-luxury.md --server --allow-local-files",
+    "preview:gaming": "marp deck-gaming.md --server --allow-local-files",
+    "preview:medical": "marp deck-medical.md --server --allow-local-files",
     "dev": "npm run watch",
     "export:all": "npm run build && npm run build:html && npm run build:pptx",
-    "clean": "rm -f deck.pdf deck.html deck.pptx"
+    "clean": "rm -f *.pdf *.html *.pptx",
+    "test:build": "marp --version && marp deck.md --dry-run"
   },
   "keywords": [
     "marp",
@@ -23,7 +45,8 @@
   "author": "Zap Pilot Team",
   "license": "MIT",
   "devDependencies": {
-    "@marp-team/marp-cli": "^3.4.0"
+    "@marp-team/marp-cli": "^3.4.0",
+    "@marp-team/marp-core": "latest"
   },
   "engines": {
     "node": ">=16.0.0"
