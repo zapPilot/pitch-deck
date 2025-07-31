@@ -272,8 +272,8 @@ style: |
 
 <!-- class: lead -->
 
-# On-chain Portfolio Autopilot  
-### Zap Pilot
+# Zap Pilot
+### On-chain Portfolio Autopilot  
 
 ---
 
@@ -293,7 +293,6 @@ style: |
 2. **Swap** into target tokens  
 3. **Claim & sell** farming rewards  
 4. **Re-allocate** to higher-APR pools  
-5. **Repeat** for every wallet
 
 <div class="highlight-box">
 
@@ -301,7 +300,7 @@ style: |
 
 • Manual rebalancing takes **30–45 minutes** + frequent gas fees  
 • Vault protocols demand **custody & performance fees**  
-• Result: portfolios drift, rewards pile up, **alpha is lost**
+• Result: 30–45 min lost per rebalance, allocations drift
 
 **⇨ 8–10 transactions, dozens of clicks, every rebalance cycle**
 
@@ -313,15 +312,15 @@ style: |
 
 <div class="highlight-box">
 
-### 🎯 **One-click "Rebalance" button**
+### 🎯 **One-click "Optimize"**
 
 **What it does:**
 
 • **Sweeps dust** & claims rewards  
 • **Sells winners**, buys laggards  
 • **Routes funds** to higher-yield pools  
-• **Respects user rules** (e.g. "≥ 50% stables")  
-• **Signs everything** from the user's own wallet
+• **100 % self-custody** — you sign every step; funds never leave your wallet
+
 
 </div>
 
@@ -346,11 +345,9 @@ style: |
 
 | Step | Tech |
 |------|------|
-| Intent batching | ERC-4337 AA wallets |
-| Cross-chain routing | LayerZero / Axelar bridges |
-| Yield discovery | On-chain APR oracle |
-| Policy engine | JSON rules → execution DAG |
-| Security | Audited, non-upgradeable modules |
+| Intent batching | EIP-7702 EOA wallets |
+| Cross-chain routing | Across / Squid bridges |
+| Security | 0 smart contract, 100% in your wallet |
 
 ---
 
@@ -360,7 +357,7 @@ style: |
 
 ### 🎯 **One-Click Rebalance Demo**
 
-**Before**: 45 minutes, 8-10 transactions, multiple dApps
+**Before**: 30 minutes, 8-10 transactions, multiple dApps
 **After**: 30 seconds, 1 signature, Zap Pilot handles everything
 
 *Replace with actual demo video/GIF when available*
@@ -372,9 +369,7 @@ style: |
 ## Why we win
 
 - **Self-custodial** — no vault lock-in, no counter-party risk  
-- **Time alpha** — 30 s vs 45 min per cycle  
-- **Rule-based control** — user chooses weights, frequency, risk caps  
-- **Composability** — plug-in to any wallet or DAO multisig
+- **Time alpha** — 30 s vs 30 min per cycle  
 
 ---
 
@@ -382,63 +377,26 @@ style: |
 
 <div class="metrics">
 <div class="metric">
-<span class="metric-number">25M</span>
+<span class="metric-number">220K</span>
 <span class="metric-label">Self-custodial DeFi wallets</span>
 </div>
 <div class="metric">
-<span class="metric-number">$90B</span>
+<span class="metric-number">$XXB</span>
 <span class="metric-label">Addressable crypto AUM</span>
 </div>
 <div class="metric">
-<span class="metric-number">$900M</span>
+<span class="metric-number">$XXM</span>
 <span class="metric-label">Target AUM (1% penetration)</span>
 </div>
 </div>
+
+---
 
 ### Revenue Model
 
 | Plan | Offering | Revenue |
 |------|----------|---------|
-| **Free** | Manual one-click rebalance | 0.2% optional tip |
-| **Pro** | Scheduled rebalances, advanced rules | $12/mo |
-| **Enterprise** | DAO treasury dashboard & APIs | Custom pricing |
-
----
-
-## Traction & Roadmap
-
-<div class="highlight-box">
-
-### Current Traction (8 weeks closed beta)
-
-<div class="metrics">
-<div class="metric">
-<span class="metric-number">$3.5M</span>
-<span class="metric-label">TVL managed</span>
-</div>
-<div class="metric">
-<span class="metric-number">19.8%</span>
-<span class="metric-label">Avg net APY delivered</span>
-</div>
-<div class="metric">
-<span class="metric-number">720+</span>
-<span class="metric-label">Successful rebalances</span>
-</div>
-<div class="metric">
-<span class="metric-number">0</span>
-<span class="metric-label">Custody incidents</span>
-</div>
-</div>
-
-**Integrations**: MetaMask Snaps, Rabby, Safe{Wallet}
-
-</div>
-
-### Roadmap
-
-| Q3 '25 | Q4 '25 | Q1 '26 |
-|--------|--------|--------|
-| Launch public beta<br>Pro subscription | DAO/multisig module<br>Mobile SDK | AI yield-signal engine<br>Reflexive fee sharing |
+| **Free** | Manual one-click zap in/out and rebalance | 1% entry fee |
 
 ---
 
@@ -450,26 +408,19 @@ style: |
 
 | Role | Background |
 |------|------------|
-| **David H.** | ex-MakerDAO engineer, 6 yrs DeFi |
-| **Alice C.** | Ex-Bloomberg quant, risk models |
-| **Ken L.** | Google SRE → infra & security |
-| **Advisors** | Steven (Press Start Capital), Jane (ex-IndexCoop) |
+| **David Chang** | Ex-Dcard Engineer, 3 yrs DeFi |
+| **Adrian Wu** | Microsoft PM, Business Development Advisor
+| **Eric Chan** | Ex-Dcard Engineer, Strategy Advisor |
 
 </div>
 
 ---
 
-<!-- _class: lead -->
-
-# 🚀 **The Ask**
-
-**Raising $2.5M seed round**  
-18-month runway • 10% equity  
-
-<br>
-
 ### 📧 Contact
-**david@zap-pilot.org** | **@zap-pilot**
+
+![X/Twitter](./qrcode.png)
+
+**zappilot.eth@ud.me / davidtnfsh@gmail.com** 
 
 <br>
 
